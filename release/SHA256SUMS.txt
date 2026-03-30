@@ -1,1 +1,1 @@
-f7d17a8a75f3ca09b73d5f4c6474339fdb89e7ab5079257a9cfeb8c34d703f9f  bepusdt-plugin-xboard.zip
+421247e4aeb8a91fc5902be2ce182f6a39009bb54d1fc289dff453ac8108bd2c  bepusdt-plugin-xboard.zip
