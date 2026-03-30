@@ -1,5 +1,7 @@
 # BEpusdt Plugin For XBoard
 
+[中文说明](./README.zh-CN.md)
+
 This plugin connects [cedar2025/Xboard](https://github.com/cedar2025/Xboard) to [v03413/BEpusdt](https://github.com/v03413/BEpusdt) without changing XBoard core files.
 
 ## What it supports
@@ -23,6 +25,14 @@ You can install it in either way:
 3. In XBoard admin, install and enable the `BEpusdt` plugin.
 4. Go to payment management and add a new payment method using `BEpusdt`.
 5. Fill the plugin config fields described below.
+
+## Release Package
+
+- Direct upload package: `release/bepusdt-plugin-xboard.zip`
+- Packaging script: `scripts/package.ps1`
+- Checksum file: `release/SHA256SUMS.txt`
+
+The release zip contains a top-level `Bepusdt/` directory, which is suitable for the XBoard plugin upload flow.
 
 ## Required config
 
