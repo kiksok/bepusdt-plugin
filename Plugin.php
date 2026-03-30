@@ -95,7 +95,7 @@ class Plugin extends AbstractPlugin implements PaymentInterface
             ],
             'timeout' => [
                 'label' => '超时时间（秒）',
-                'type' => 'number',
+                'type' => 'string',
                 'description' => 'cashier 模式最少 180 秒，transaction 模式最少 120 秒',
             ],
             'currencies' => [
