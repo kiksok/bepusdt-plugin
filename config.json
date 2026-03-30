@@ -3,6 +3,6 @@
     "code": "bepusdt",
     "type": "payment",
     "version": "1.0.0",
-    "description": "BEpusdt payment plugin for XBoard",
+    "description": "XBoard 的 BEpusdt 支付插件",
     "author": "OpenAI Codex"
 }
