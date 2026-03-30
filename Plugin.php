@@ -131,8 +131,7 @@ class Plugin extends AbstractPlugin implements PaymentInterface
         }
 
         $mode = $this->normalizeMode((string) $this->getConfig('mode', self::CASHIER_MODE));
-        $amountString = number_format(((int) $order['total_amount']) / 100, 2, '.', '');
-        $amount = (float) $amountString;
+        $amount = round(((int) $order['total_amount']) / 100, 2);
         $payload = [
             'order_id' => (string) $order['trade_no'],
             'amount' => $amount,
@@ -170,9 +169,7 @@ class Plugin extends AbstractPlugin implements PaymentInterface
             }
         }
 
-        $signaturePayload = $payload;
-        $signaturePayload['amount'] = $amountString;
-        $payload['signature'] = $this->signPayload($signaturePayload, $apiToken);
+        $payload['signature'] = $this->signPayload($payload, $apiToken);
 
         $result = $this->postJson($gatewayUrl . $endpoint, $payload);
         if ((int) ($result['status_code'] ?? 0) !== 200) {
